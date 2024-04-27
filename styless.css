@@ -86,6 +86,27 @@ img{
     font-size: 2rem;
 }
 
+.cuadro{
+    display: flex;
+    background-color: aqua;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.cuadro .imagen{
+    flex: 33%;
+}
+
+.cuadro .imagen img{
+    width: 50%;
+}
+
+.cuadro .texto{
+    flex: 66%;
+}
+
 @media screen and (max-width:800px) {
     .row{
         flex-direction: column-reverse  ;
