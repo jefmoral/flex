@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: blueviolet;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+img{
+    width: 100%;
+}
+
+.aside img{
+    width: 80%;
+    margin: 5px auto;
+    display: block;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.aside{
+    background-color: brown;
+    padding: 10px;
+}
+
+.section{
+    background-color: rgb(99, 48, 48);
+    padding: 10px;
+}
+
+.video{
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: calc(100vw*50/100);
+    max-width: 400px;
+}
+
+@media screen and (max-width:800px) {
+    .row{
+        flex-direction: column-reverse  ;
+    }
+
+}
