@@ -51,6 +51,41 @@ img{
     max-width: 400px;
 }
 
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 30px;
+}
+
+.tarjetas .card{
+    background-color: rgb(140, 105, 173);
+    width: 100%;
+    max-width: 300%;
+    height: auto;
+    border: 2px dashed red;
+    border-radius: 25px;
+    box-shadow: 7px 7px 10px black;
+    padding: 10px;
+    overflow: auto;
+    aspect-ratio: 700/880;
+}
+
+.tarjetas .card .contenido img{
+    width: 35%;
+    margin: auto;
+    display: block;
+}
+
+.tarjetas .card .contenido .centrar{
+    text-align: center;
+    background-color: blue;
+    border-bottom: 2px dashed red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 @media screen and (max-width:800px) {
     .row{
         flex-direction: column-reverse  ;
